@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_home"
+        android:icon="@drawable/house"
+        android:title="Trang Chủ"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_file"
+        android:icon="@drawable/edit"
+        android:title="Hồ Sơ"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_camera"
+        android:icon="@drawable/camera"
+        android:title="Chụp Ảnh"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_product"
+        android:icon="@drawable/cream"
+        android:title="Sản Phẩm"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_news"
+        android:icon="@drawable/fire"
+        android:title="Tin Tức"
+        app:showAsAction="always"/>
+</menu>

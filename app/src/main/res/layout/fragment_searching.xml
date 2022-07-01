@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="arrow-left3"
+            android:fontFamily="@font/icomoonultimate"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"/>
+        <LinearLayout
+            android:layout_marginRight="20dp"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="5dp"
+            android:background="@drawable/custom_searchbackgr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:id="@+id/search_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:fontFamily="@font/svngotham"
+                android:hint="Tìm kiếm..."
+                android:textColor="@color/black"
+                android:textColorHint="#999999"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/search2" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

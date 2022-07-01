@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/waitingFrag">
+    <fragment
+        android:id="@+id/waitingFrag"
+        android:name="com.example.mvvm.ui.fragment.waiting.WaitingFragment"
+        android:label="WaitingFragment" />
+    <fragment
+        android:id="@+id/logingFrag"
+        android:name="com.example.mvvm.ui.fragment.login.LoginFragment"
+        android:label="LoginFragment" />
+    <fragment
+        android:id="@+id/homeFrag"
+        android:name="com.example.mvvm.ui.fragment.home.HomeFragment"
+        android:label="LoginFragment" />
+    <fragment
+        android:id="@+id/register"
+        android:name="com.example.mvvm.ui.fragment.register.RegisterFragment"
+        android:label="RegisterFragment" />
+    <fragment
+        android:id="@+id/notification"
+        android:name="com.example.mvvm.ui.fragment.home.notification.NotificationFragment"
+        android:label="NotificationFragment" />
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.example.mvvm.ui.fragment.home.profile.ProfileFragment"
+        android:label="ProfileFragment" />
+    <fragment
+        android:id="@+id/updateprofile"
+        android:name="com.example.mvvm.ui.fragment.home.profile.updateprofile.UpdateProfileFragment"
+        android:label="UpdateProfileFragment" />
+    <fragment
+        android:id="@+id/skinanalysis"
+        android:name="com.example.mvvm.ui.fragment.home.homepage.skinanalysis.SkinAnalysisFragment"
+        android:label="SkinAnalysisFrament">
+    </fragment>
+    <fragment
+        android:id="@+id/surveyskin"
+        android:name="com.example.mvvm.ui.fragment.home.homepage.skinanalysis.skinsurvey.SkinSurveyFragment"
+        android:label="SurveySkinFragment"/>
+    <fragment
+        android:id="@+id/surveyhistory"
+        android:name="com.example.mvvm.ui.fragment.home.homepage.skinanalysis.surveyhistory.SurveyHistoryFragment"
+        android:label="SurveyHistory"/>
+    <action
+        android:id="@+id/action_toSkinAnalysis"
+        app:destination="@+id/skinanalysis"/>
+    <action
+        android:id="@+id/action_toLoginFrag"
+        app:destination="@+id/logingFrag" />
+    <action
+        android:id="@+id/action_toHomeFrag"
+        app:destination="@+id/homeFrag" />
+    <action
+        android:id="@+id/action_toRegisterFrag"
+        app:destination="@+id/register" />
+    <action
+        android:id="@+id/action_toNotify"
+        app:destination="@+id/notification" />
+    <action
+        android:id="@+id/action_toProfile"
+        app:destination="@+id/profile" />
+    <action
+        android:id="@+id/action_toUpdateProfile"
+        app:destination="@+id/updateprofile" />
+    <action
+        android:id="@+id/action_toSkinSurvey"
+        app:destination="@id/surveyskin"/>
+    <action
+        android:id="@+id/action_toSurveyHistory"
+        app:destination="@id/surveyhistory"/>
+</navigation>

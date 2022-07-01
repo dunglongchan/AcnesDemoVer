@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="productVm"
+            type="com.example.mvvm.ui.fragment.home.product.ProductViewModel" />
+    </data>
+    <LinearLayout
+        android:id="@+id/backgr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+<!--        search bar-->
+        <LinearLayout
+            android:layout_marginHorizontal="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_searchbackgr"
+            android:layout_gravity="center"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="8dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_weight="0.5"
+                android:id="@+id/search_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:fontFamily="@font/svngotham"
+                android:hint="Tìm kiếm..."
+                android:textColor="@color/black"
+                android:textColorHint="#999999"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/search2" />
+        </LinearLayout>
+
+<!--        tablayout-->
+        <androidx.cardview.widget.CardView
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="0dp">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tablayout"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:textSize="12sp"
+                app:tabBackground="@drawable/tab_indicator"
+                app:tabSelectedTextColor="#FFFFFF"
+                app:tabTextColor="#666666"
+                app:tabTextAppearance="@style/tab_text"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:layout_marginTop="15dp"
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:userInputEnabled="@{false}"/>
+    </LinearLayout>
+</layout>

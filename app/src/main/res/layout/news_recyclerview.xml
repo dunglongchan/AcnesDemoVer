@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="5dp"
+    android:layout_weight="0.5"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/custom_linearbackgr"
+    android:paddingVertical="10dp"
+    android:paddingHorizontal="10dp">
+    <ImageView
+        android:id="@+id/news_image"
+        android:layout_width="150dp"
+        android:layout_height="100dp" />
+    <TextView
+        android:id="@+id/news_title"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:fontFamily="@font/svngotham"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rohto Vietnam"
+        android:textColor="#009967"
+        android:fontFamily="@font/svngotham"
+        android:textSize="12sp"/>
+    <TextView
+        android:id="@+id/news_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="21/12/2020 08:54:17"
+        android:textColor="#999999"
+        android:textSize="11sp"
+        android:fontFamily="@font/svngotham"/>
+</LinearLayout>

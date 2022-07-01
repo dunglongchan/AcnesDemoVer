@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginRight="15dp"
+    app:cardCornerRadius="5dp">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="15dp">
+        <ImageView
+            android:id="@+id/profile_productimage"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:src="@drawable/product1"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/profile_productname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gel chuyên biệt \nsáng thâm, mờ sẹ..."
+            android:textSize="13sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/svngotham"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/profile_productprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="75.000"
+            android:textColor="#EE2D33"
+            android:textSize="12sp"
+            android:fontFamily="@font/svngothambold"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

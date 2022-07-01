@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.home.file.fragment.analysis.AnalysisHistoryFrag">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="0dp">
+
+            <LinearLayout
+                android:paddingHorizontal="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20dp"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_weight="0.5"
+                        android:layout_width="match_parent"
+                        android:paddingRight="20dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/textviewdanhgia"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/svngothambold"
+                            android:text="Đánh Giá Chung"
+                            android:textColor="#009967"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_weight="0.5"
+                            android:id="@+id/textviewdisplay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textviewdanhgia"
+                            android:fontFamily="@font/svngothambold"
+                            android:text="Chọn từng ảnh để xem đánh giá chi tiết"
+                            android:textColor="#999999"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sfprodisplaybold"
+                        android:text="4/5"
+                        android:textColor="#009967"
+                        android:textSize="30sp" />
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="0dp">
+                    <LinearLayout
+                        android:weightSum="3"
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_weight="1"
+                            android:id="@+id/imgtrai"
+                            android:layout_width="match_parent"
+                            android:layout_height="170dp"
+                            android:src="@drawable/surveypic1" />
+
+                        <ImageView
+                            android:layout_weight="1"
+                            android:layout_marginHorizontal="1dp"
+                            android:id="@+id/imggiua"
+                            android:layout_width="match_parent"
+                            android:layout_height="170dp"
+                            android:src="@drawable/surveypic2" />
+
+                        <ImageView
+                            android:layout_weight="1"
+                            android:id="@+id/imgphai"
+                            android:layout_width="match_parent"
+                            android:layout_height="170dp"
+                            android:src="@drawable/surveypic3" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="0dp">
+
+            <LinearLayout
+                android:paddingHorizontal="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_linearbackgr"
+                android:orientation="vertical"
+                android:paddingVertical="15dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="15sp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/svngothambold"
+                        android:text="TÌNH TRẠNG DA"
+                        android:textColor="#009967"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:fontFamily="@font/svngothambold"
+                        android:text="Số Lượng"
+                        android:textColor="#009967"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="0dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#F5F5F5">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/svngothambold"
+                                android:paddingHorizontal="10dp"
+                                android:paddingVertical="10dp"
+                                android:text="Tổn thương (nan, nốt)"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:background="#C9AEAE"
+                                android:fontFamily="@font/svngothambold"
+                                android:paddingHorizontal="15dp"
+                                android:paddingVertical="10dp"
+                                android:text="2"
+                                android:textColor="@color/black"
+                                android:textSize="15sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/svngothambold"
+                                android:paddingHorizontal="10dp"
+                                android:paddingVertical="10dp"
+                                android:text="Tổn thương (nan, nốt)"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:background="#F4C3C4"
+                                android:fontFamily="@font/svngothambold"
+                                android:paddingHorizontal="15dp"
+                                android:paddingVertical="10dp"
+                                android:text="3"
+                                android:textColor="@color/black"
+                                android:textSize="15sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#F5F5F5">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/svngothambold"
+                                android:paddingHorizontal="10dp"
+                                android:paddingVertical="10dp"
+                                android:text="Tổn thương (nan, nốt)"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:background="#695555"
+                                android:fontFamily="@font/svngothambold"
+                                android:paddingHorizontal="15dp"
+                                android:paddingVertical="10dp"
+                                android:text="5"
+                                android:textColor="@color/black"
+                                android:textSize="15sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/svngothambold"
+                                android:paddingHorizontal="10dp"
+                                android:paddingVertical="10dp"
+                                android:text="Tổn thương (nan, nốt)"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:background="#F4C3C4"
+                                android:fontFamily="@font/svngothambold"
+                                android:paddingHorizontal="15dp"
+                                android:paddingVertical="10dp"
+                                android:text="8"
+                                android:textColor="@color/black"
+                                android:textSize="15sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#F5F5F5">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/svngothambold"
+                                android:paddingHorizontal="10dp"
+                                android:paddingVertical="10dp"
+                                android:text="Tổn thương (nan, nốt)"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:background="#F46A6E"
+                                android:fontFamily="@font/svngothambold"
+                                android:paddingHorizontal="15dp"
+                                android:paddingVertical="10dp"
+                                android:text="7"
+                                android:textColor="@color/black"
+                                android:textSize="15sp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="0dp">
+
+            <LinearLayout
+                android:paddingHorizontal="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_linearbackgr"
+                android:orientation="vertical"
+                android:paddingVertical="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/svngothambold"
+                    android:text="NHẬN XÉT"
+                    android:textColor="#009967"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/backgrprofile"
+                    android:fontFamily="@font/svngotham"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="15dp"
+                    android:text="Mức độ nghiêm trọng nhẹ; nặng hơn Mức độ 1; một số tổn thương không viêm với không nhiều hơn một vài tổn thương viêm (chỉ có sẩn / mụn mủ, không có tổn thương dạng nốt)"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/svngothambold"
+            android:text="SẢN PHẨM PHÙ HỢP"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcvprofileproduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:scrollbars="horizontal"
+            tools:listitem="@layout/profile_productsuggest_rcv" />
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>

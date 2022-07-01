@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/vh5_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/svngotham"
+        android:text="cau hoi"
+        android:textColor="#000000"
+        android:textSize="13sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:id="@+id/vh5_option1"
+                style="@style/SurveyForm"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/vh5_img1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ss11" />
+
+                <TextView
+                    android:id="@+id/vh5_content1"
+                    style="@style/SurveyOption"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/vh5_option2"
+                style="@style/SurveyForm"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/vh5_img2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ss11" />
+
+                <TextView
+                    android:id="@+id/vh5_content2"
+                    style="@style/SurveyOption"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:id="@+id/vh5_option3"
+                style="@style/SurveyForm"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/vh5_img3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ss11" />
+
+                <TextView
+                    android:id="@+id/vh5_content3"
+                    style="@style/SurveyOption"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/vh5_option4"
+                style="@style/SurveyForm"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/vh5_img4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ss11" />
+
+                <TextView
+                    android:id="@+id/vh5_content4"
+                    style="@style/SurveyOption"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:id="@+id/vh5_option5"
+                style="@style/SurveyForm"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/vh5_img5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ss11" />
+
+                <TextView
+                    android:id="@+id/vh5_content5"
+                    style="@style/SurveyOption"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="content" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
